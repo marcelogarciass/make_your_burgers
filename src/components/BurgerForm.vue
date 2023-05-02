@@ -2,7 +2,7 @@
     <div>
         <p>Componente de mensagem</p>
         <div>
-            <form id="burger-form">
+            <form id="burger-form" @submit="createBurger">
             <div class="input-container">
                 <label for="nome">Nome do Cliente:</label>
                 <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite o seu nome">
@@ -49,7 +49,6 @@ export default {
             pao: null,
             carne: null,
             opcionais: [],
-            status: "Solicitação",
             msg: null
         }
     },
@@ -61,6 +60,33 @@ export default {
             this.paes = data.paes;
             this.carnes = data.carnes;
             this.opcionaisdata = data.opcionais;
+        },
+        async createBurger(e) {
+            e.preventDefault();
+
+            const data = {
+                nome: this.nome,
+                carne: this.carne,
+                pao: this.pao,
+                opcionais: Array.from(this.opcionais),
+                status: "Solicitado"
+            }
+            const dataJson = JSON.stringify(data);
+            const req = await fetch("http://localhost:3000/burgers", {
+                method: "Post",
+                headers: {"Content-Type": "application/json"},
+                body: dataJson
+            });
+
+            const res = await req.json();
+            
+            // colocar uma mensagem de sistema
+
+            // limpar os campos
+            this.nome = "";
+            this.carne = "";
+            this.pao = "";
+            this.opcionais = "";
         }
     },
     mounted() {
