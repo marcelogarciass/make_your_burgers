@@ -17,7 +17,7 @@ export default {
         background-image: url('/public/img/burger.jpg');
         background-position: 0 -250px;
         background-size: cover;
-        height: 800px;
+        height: 600px;
         display: flex;
         align-items: center;
         justify-content: flex-start;

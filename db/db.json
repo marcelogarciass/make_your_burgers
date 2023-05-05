@@ -16,6 +16,10 @@
       {
         "id": 4,
         "tipo": "Integral"
+      },
+      {
+        "id": 5,
+        "tipo": "Forma"
       }
     ],
     "carnes": [
@@ -25,7 +29,7 @@
       },
       {
         "id": 2,
-        "tipo": "Alcatra"
+        "tipo": "Costela"
       },
       {
         "id": 3,
@@ -47,7 +51,7 @@
       },
       {
         "id": 3,
-        "tipo": "Salame"
+        "tipo": "Queijo branco"
       },
       {
         "id": 4,
@@ -60,6 +64,14 @@
       {
         "id": 4,
         "tipo": "Pepino"
+      },
+      {
+        "id": 5,
+        "tipo": "Cebola Onion"
+      },
+      {
+        "id": 5,
+        "tipo": "Maionese extra"
       }
     ]
   },
@@ -79,67 +91,6 @@
   ],
   "burgers": [
     {
-      "nome": "MARCELO GARCIA",
-      "carne": "carne.tipo",
-      "pao": "pao.tipo",
-      "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 1
-    },
-    {
-      "nome": "MARCELO GARCIA",
-      "carne": "carne.tipo",
-      "pao": "pao.tipo",
-      "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
-      "nome": "MARCELO GARCIA",
-      "carne": "",
-      "pao": "pao.tipo",
-      "opcionais": [
-        "Bacon",
-        "Cheddar"
-      ],
-      "status": "Solicitado",
-      "id": 13
-    },
-    {
-      "nome": "Marcelo Garcia",
-      "carne": "carne.tipo",
-      "pao": "pao.tipo",
-      "opcionais": [
-        "Bacon",
-        "Cheddar"
-      ],
-      "status": "Solicitado",
-      "id": 14
-    },
-    {
-      "nome": null,
-      "carne": null,
-      "pao": null,
-      "opcionais": [
-        "Cheddar",
-        "Tomate",
-        "Pepino",
-        "Salame",
-        "Bacon",
-        "Cebola roxa"
-      ],
-      "status": "Solicitado",
-      "id": 15
-    },
-    {
       "nome": "Erica",
       "carne": "carne.tipo",
       "pao": "pao.tipo",
@@ -148,7 +99,7 @@
         "Cebola roxa",
         "Pepino"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 16
     },
     {
@@ -171,8 +122,23 @@
         "Cheddar",
         "Tomate"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 18
+    },
+    {
+      "nome": "Estella",
+      "carne": "carne.tipo",
+      "pao": "pao.tipo",
+      "opcionais": [
+        "Bacon",
+        "Queijo branco",
+        "Cebola Onion",
+        "Cheddar",
+        "Tomate",
+        "Maionese extra"
+      ],
+      "status": "Em produção",
+      "id": 19
     }
   ]
 }
